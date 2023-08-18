@@ -27,3 +27,11 @@ export { default as Gallery } from "@/components/Gallery/Gallery";
 // Contacts
 
 export { default as Contacts } from "@/components/Contacts/Contacts";
+
+// Modals
+
+export { default as NavMenuModal } from "@/components/Modals/NavMenuModal";
+
+// Buttons
+
+export { default as Button } from "@/components/Buttons/Button";

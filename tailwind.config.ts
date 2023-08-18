@@ -12,6 +12,7 @@ const config: Config = {
       },
       colors: {
         error: "#FF5757",
+        overlayMod: "#010A05",
       },
     },
   },
