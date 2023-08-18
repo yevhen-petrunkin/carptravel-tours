@@ -1,5 +1,13 @@
+import { Container } from "@/components";
+
 const Hero = () => {
-  return <div>Hero</div>;
+  return (
+    <section>
+      <Container isHero background="bg-hero">
+        Hero
+      </Container>
+    </section>
+  );
 };
 
 export default Hero;

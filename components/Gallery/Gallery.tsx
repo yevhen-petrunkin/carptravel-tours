@@ -1,5 +1,11 @@
+import { Container } from "@/components";
+
 const Gallery = () => {
-  return <div>Gallery</div>;
+  return (
+    <section>
+      <Container background="bg-gallery">Gallery</Container>
+    </section>
+  );
 };
 
 export default Gallery;

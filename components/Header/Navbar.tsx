@@ -34,7 +34,13 @@ const Navbar = () => {
   return (
     <div className="text-[14px] leading-[1.21] tracking-[0.1em]">
       <span className="md:hidden">
-        <Button text="Menu" size="14px" line={1.21} wider onClick={onOpen} />
+        <Button
+          text="Menu"
+          size={["14px"]}
+          line={[1.21]}
+          wider
+          onClick={onOpen}
+        />
       </span>
 
       <nav className="hidden md:flex md:gap-[24px] xl:gap-[56px] center-end">

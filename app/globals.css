@@ -14,6 +14,8 @@ body,
 
 /* ------ Utility Classes ------ */
 
+/* Flex */
+
 .center-between {
   @apply items-center justify-between;
 }
@@ -24,4 +26,44 @@ body,
 
 .center-center {
   @apply items-center justify-center;
+}
+
+/* Containers */
+
+.width-container {
+  @apply mx-auto max-w-[480px] md:max-w-[768px] xl:max-w-[1280px];
+}
+
+/* Backgrounds */
+
+.cover-norepeat {
+  @apply bg-cover bg-no-repeat bg-center;
+}
+
+.contain-repeat {
+  @apply bg-contain bg-repeat bg-center;
+}
+
+.container-bg {
+  @apply relative -z-10;
+}
+
+.bg-hero {
+  @apply bg-hero-sm md:bg-hero-md xl:bg-hero-xl;
+}
+
+.bg-about {
+  @apply bg-about-sm md:bg-about-md xl:bg-about-xl;
+}
+
+.bg-career {
+  @apply bg-career-sm md:bg-career-md xl:bg-career-xl;
+}
+
+.bg-gallery {
+  @apply bg-gallery-sm md:bg-gallery-md xl:bg-gallery-xl;
+}
+
+.bg-contacts {
+  @apply bg-contacts-sm md:bg-contacts-md xl:bg-contacts-xl;
 }

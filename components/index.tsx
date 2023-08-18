@@ -35,3 +35,7 @@ export { default as NavMenuModal } from "@/components/Modals/NavMenuModal";
 // Buttons
 
 export { default as Button } from "@/components/Buttons/Button";
+
+// Containers
+
+export { default as Container } from "@/components/Containers/Container";

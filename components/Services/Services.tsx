@@ -1,5 +1,11 @@
+import { Container } from "@/components";
+
 const Services = () => {
-  return <div>Services</div>;
+  return (
+    <section>
+      <Container>Services</Container>
+    </section>
+  );
 };
 
 export default Services;

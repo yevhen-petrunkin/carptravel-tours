@@ -1,5 +1,11 @@
+import { Container } from "@/components";
+
 const About = () => {
-  return <div>About</div>;
+  return (
+    <section>
+      <Container background="bg-about">About</Container>
+    </section>
+  );
 };
 
 export default About;

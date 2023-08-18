@@ -1,7 +1,7 @@
 interface IButtonProps {
   text: string;
-  size: string;
-  line: number;
+  size: string[];
+  line: number[];
   wider?: boolean;
   type?: "button" | "submit" | "reset";
   lowercase?: boolean;
