@@ -3,8 +3,8 @@ import { Container } from "@/components";
 const Contacts = () => {
   return (
     <footer>
-      <section>
-        <Container background="bg-contacts">Contacts</Container>
+      <section className="bg-contacts cover-norepeat max-w-[1440px]">
+        <Container>Contacts</Container>
       </section>
     </footer>
   );

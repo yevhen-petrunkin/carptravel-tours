@@ -4,7 +4,7 @@ import { useBtnProps } from "@/hooks";
 
 import type { IButtonProps } from "@/interfaces";
 
-const Button: React.FC<IButtonProps> = ({
+const StylishButton: React.FC<IButtonProps> = ({
   text,
   size,
   line,
@@ -13,6 +13,7 @@ const Button: React.FC<IButtonProps> = ({
   lowercase,
   weight,
   color,
+
   onClick,
 }) => {
   const { fontSize, lineHeight } = useBtnProps({ size, line });
@@ -25,7 +26,7 @@ const Button: React.FC<IButtonProps> = ({
       style={{ fontSize, fontWeight, color: textColor, lineHeight }}
       className={`${lowercase ? "lowercase" : "uppercase"} ${
         wider && "tracking-[0.1em]"
-      }`}
+      } stylish-btn`}
       type={type ? type : "button"}
       onClick={onClick}
     >
@@ -34,4 +35,4 @@ const Button: React.FC<IButtonProps> = ({
   );
 };
 
-export default Button;
+export default StylishButton;

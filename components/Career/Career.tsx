@@ -2,8 +2,8 @@ import { Container } from "@/components";
 
 const Career = () => {
   return (
-    <section>
-      <Container background="bg-career">Career</Container>
+    <section className="bg-career cover-norepeat ">
+      <Container>Career</Container>
     </section>
   );
 };

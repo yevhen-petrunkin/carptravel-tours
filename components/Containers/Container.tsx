@@ -2,18 +2,16 @@ import { IContainerProps } from "@/interfaces";
 
 const Container: React.FC<IContainerProps> = ({
   isHero,
-  background,
+
   children,
 }) => {
   return (
     <div
-      className={`px-[20px] md:px-[32px] ${
+      className={`px-[20px] md:px-[32px] xl:px-[24px] ${
         isHero
-          ? "py-[105px] md:py-[123px] xl:px-[104px] xl:py-[130px]"
-          : "py-[56px] md:py-[64px] xl:p-[104px]"
-      } width-container h-full ${
-        background ? background : ""
-      } cover-norepeat container-bg`}
+          ? "pt-[105px] pb-[56px] md:pt-[123px] md:pb-[64px] xl:pt-[130px] xl:pb-[104px]"
+          : "py-[56px] md:py-[64px] xl:py-[104px]"
+      } width-container h-full`}
     >
       {children}
     </div>

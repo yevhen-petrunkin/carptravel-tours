@@ -27,7 +27,7 @@ const NavMenuModal: React.FC<INavMenuModalProps> = ({ isOpen, onClose }) => {
     <nav
       className={`${
         isOpen ? "fixed" : "hidden"
-      } md:hidden inset-0 w-[100vw] h-[100vh] z-10 flex flex-col center-center gap-[48px] text-[18px]  bg-overlayMod/75 backdrop-blur-md`}
+      } md:hidden inset-0 w-[100vw] h-[100vh] z-10 flex flex-col center-center gap-[48px] text-[18px] bg-overlayMod/75 backdrop-blur-md`}
     >
       {navMenu.map(({ section, link }: navMenuT) => (
         <div

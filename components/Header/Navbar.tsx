@@ -25,10 +25,18 @@ const Navbar = () => {
 
   const onOpen = useCallback(() => {
     setModalOpen(true);
+    const body = document.querySelector("body");
+    if (body) {
+      body.style.overflowY = "hidden";
+    }
   }, [setModalOpen]);
 
   const onClose = useCallback(() => {
     setModalOpen(false);
+    const body = document.querySelector("body");
+    if (body) {
+      body.style.overflowY = "auto";
+    }
   }, [setModalOpen]);
 
   return (

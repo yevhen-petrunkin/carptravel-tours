@@ -44,10 +44,6 @@ body,
   @apply bg-contain bg-repeat bg-center;
 }
 
-.container-bg {
-  @apply relative -z-10;
-}
-
 .bg-hero {
   @apply bg-hero-sm md:bg-hero-md xl:bg-hero-xl;
 }
@@ -66,4 +62,45 @@ body,
 
 .bg-contacts {
   @apply bg-contacts-sm md:bg-contacts-md xl:bg-contacts-xl;
+}
+
+/* Buttons */
+
+.stylish-btn {
+  @apply relative w-full h-[53px] md:h-[50px] xl:h-[71px] bg-white/10 md:bg-white/5 hover:bg-white/20 focus:bg-white/20 transition-colors;
+}
+
+.stylish-btn::before,
+.stylish-btn::after {
+  content: "";
+  @apply absolute inset-0 h-full w-full bg-no-repeat pointer-events-none;
+}
+
+.stylish-btn::before {
+  background-image: url("/assets/icons/btn-frame/btn-frame-left-sm.svg");
+}
+
+.stylish-btn::after {
+  background-image: url("/assets/icons/btn-frame/btn-frame-left-sm.svg");
+  @apply rotate-180;
+}
+
+@media screen and (min-width: 768px) {
+  .stylish-btn::before {
+    background-image: url("/assets/icons/btn-frame/btn-frame-left-md.svg");
+  }
+
+  .stylish-btn::after {
+    background-image: url("/assets/icons/btn-frame/btn-frame-left-md.svg");
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .stylish-btn::before {
+    background-image: url("/assets/icons/btn-frame/btn-frame-left-xl.svg");
+  }
+
+  .stylish-btn::after {
+    background-image: url("/assets/icons/btn-frame/btn-frame-left-xl.svg");
+  }
 }

@@ -22,9 +22,11 @@ export default function RootLayout({
         className={`${inter.className} bg-black text-white overflow-x-hidden`}
       >
         <Media>
-          <Header />
-          {children}
-          <Contacts />
+          <div className="relative max-w-[1440px] mx-auto">
+            <Header />
+            {children}
+            <Contacts />
+          </div>
         </Media>
       </body>
     </html>
