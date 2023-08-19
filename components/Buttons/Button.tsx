@@ -1,6 +1,6 @@
 "use client";
 
-import { useBtnProps } from "@/hooks";
+import { useTextProps } from "@/hooks";
 
 import type { IButtonProps } from "@/interfaces";
 
@@ -15,7 +15,7 @@ const Button: React.FC<IButtonProps> = ({
   color,
   onClick,
 }) => {
-  const { fontSize, lineHeight } = useBtnProps({ size, line });
+  const { fontSize, lineHeight } = useTextProps({ size, line });
 
   const fontWeight = weight ? weight : 400;
   const textColor = color ? color : "#ffffff";

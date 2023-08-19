@@ -10,6 +10,7 @@ html,
 body,
 :root {
   height: 100%;
+  scrollbar-gutter: auto;
 }
 
 /* ------ Utility Classes ------ */
@@ -50,6 +51,7 @@ body,
 
 .bg-about {
   @apply bg-about-sm md:bg-about-md xl:bg-about-xl;
+  scrollbar-gutter: stable;
 }
 
 .bg-career {
@@ -103,4 +105,18 @@ body,
   .stylish-btn::after {
     background-image: url("/assets/icons/btn-frame/btn-frame-left-xl.svg");
   }
+}
+
+/* Text */
+
+.heading-content {
+  @apply text-[40px] md:text-[67px] xl:text-[98px] leading-[1.4] md:leading-[1.21] font-thin uppercase -tracking-[0.04em];
+}
+
+.paragraph-content {
+  @apply text-[14px] md:text-[16px] xl:text-[18px] leading-[1.43] md:leading-[1.25] xl:leading-[1.33] font-extralight;
+}
+
+.spec span {
+  @apply uppercase font-normal tracking-normal;
 }

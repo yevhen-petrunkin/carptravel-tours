@@ -1,9 +1,11 @@
 "use client";
 
+import type { textPropsT } from "@/types";
+
 import { useState, useEffect } from "react";
 import { useMedia } from "@/hooks";
 
-const useBtnProps = ({ size, line }: any) => {
+const useTextProps = ({ size, line }: textPropsT) => {
   const [fontSize, setFontSize] = useState(size[0]);
   const [lineHeight, setLineHeight] = useState(line[0]);
 
@@ -48,4 +50,4 @@ const useBtnProps = ({ size, line }: any) => {
   return { fontSize, lineHeight };
 };
 
-export default useBtnProps;
+export default useTextProps;

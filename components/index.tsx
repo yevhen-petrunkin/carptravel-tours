@@ -40,3 +40,9 @@ export { default as StylishButton } from "@/components/Buttons/StylishButton";
 // Containers
 
 export { default as Container } from "@/components/Containers/Container";
+
+// Text
+
+export { default as MainHeading } from "@/components/Text/MainHeading";
+export { default as SectionHeading } from "@/components/Text/SectionHeading";
+export { default as Paragraph } from "@/components/Text/Paragraph";
