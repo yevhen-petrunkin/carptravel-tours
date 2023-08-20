@@ -1,6 +1,6 @@
-import type { navMenuT } from "@/types";
+import type { NavMenuT } from "@/types";
 
-const navMenu: navMenuT[] = [
+const navMenu: NavMenuT[] = [
   {
     section: "About",
     link: "./",

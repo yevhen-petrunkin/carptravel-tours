@@ -1,6 +1,6 @@
-type navMenuT = {
+type NavMenuT = {
   section: string;
   link: string;
 };
 
-export default navMenuT;
+export default NavMenuT;

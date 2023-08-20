@@ -1,11 +1,11 @@
 "use client";
 
-import { textAlignT } from "@/types";
+import { TextAlignT } from "@/types";
 
 import { useState, useEffect } from "react";
 import { useMedia } from "@/hooks";
 
-const useTextAlignProp = (array: textAlignT[] | undefined) => {
+const useTextAlignProp = (array: TextAlignT[] | undefined) => {
   const [textAlign, setTextAlign] = useState(
     array && array.length ? array[0] : "left"
   );

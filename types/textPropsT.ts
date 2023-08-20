@@ -1,6 +1,6 @@
-type textPropsT = {
+type TextPropsT = {
   size: string[];
   line: number[];
 };
 
-export default textPropsT;
+export default TextPropsT;

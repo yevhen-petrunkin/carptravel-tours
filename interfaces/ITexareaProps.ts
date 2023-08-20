@@ -1,7 +1,7 @@
-import type { textareaT } from "@/types";
+import type { TextareaT } from "@/types";
 
 interface ITextareaProps {
-  textarea: textareaT;
+  textarea: TextareaT;
   height: string[];
 }
 

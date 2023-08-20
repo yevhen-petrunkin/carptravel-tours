@@ -1,11 +1,11 @@
 "use client";
 
-import type { textPropsT } from "@/types";
+import type { TextPropsT } from "@/types";
 
 import { useState, useEffect } from "react";
 import { useMedia } from "@/hooks";
 
-const useTextProps = ({ size, line }: textPropsT) => {
+const useTextProps = ({ size, line }: TextPropsT) => {
   const [fontSize, setFontSize] = useState(
     size && size.length ? size[0] : "16px"
   );

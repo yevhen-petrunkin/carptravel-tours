@@ -1,9 +1,9 @@
-import type { formInputT, textareaT } from "@/types";
+import type { FormInputT, TextareaT } from "@/types";
 
 interface IFormProps {
   form: {
-    inputs: formInputT[];
-    textarea: textareaT;
+    inputs: FormInputT[];
+    textarea: TextareaT;
     confirmation?: string;
     btnText?: string;
   };

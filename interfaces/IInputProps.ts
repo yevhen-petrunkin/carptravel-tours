@@ -1,7 +1,7 @@
-import type { formInputT } from "@/types";
+import type { FormInputT } from "@/types";
 
 interface IInputProps {
-  input: formInputT;
+  input: FormInputT;
 }
 
 export default IInputProps;

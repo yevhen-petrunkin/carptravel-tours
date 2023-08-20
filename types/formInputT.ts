@@ -1,4 +1,4 @@
-type formInputT = {
+type FormInputT = {
   id: string;
   label: string;
   placeholder: string;
@@ -7,4 +7,4 @@ type formInputT = {
   error: string;
 };
 
-export default formInputT;
+export default FormInputT;

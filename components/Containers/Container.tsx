@@ -1,10 +1,6 @@
 import { IContainerProps } from "@/interfaces";
 
-const Container: React.FC<IContainerProps> = ({
-  isHero,
-
-  children,
-}) => {
+const Container: React.FC<IContainerProps> = ({ isHero, children }) => {
   return (
     <div
       className={`px-[20px] md:px-[32px] xl:px-[24px] ${

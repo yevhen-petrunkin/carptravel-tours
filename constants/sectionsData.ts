@@ -226,18 +226,52 @@ export const contactsData = {
   },
 
   phone: {
+    id: "phone",
     label: "Phone number",
-    list: ["+38 (098) 12 34 567", "+38 (073) 12 34 567"],
+    list: [
+      {
+        label: "+38 (098) 12 34 567",
+        link: "+38(098)1234567",
+      },
+      {
+        label: "+38 (073) 12 34 567",
+        link: "+38(073)1234567",
+      },
+    ],
   },
 
   email: {
+    id: "email",
     label: "E-mail",
-    list: ["support@carptravel.com"],
+    list: [
+      {
+        label: "support@carptravel.com",
+        link: "support@carptravel.com",
+      },
+    ],
   },
 
   media: {
+    id: "media",
     label: "Follow us",
-    list: ["facebook", "instagram", "youtube", "tiktok"],
+    list: [
+      {
+        label: "facebook",
+        link: "./",
+      },
+      {
+        label: "instagram",
+        link: "./",
+      },
+      {
+        label: "youtube",
+        link: "./",
+      },
+      {
+        label: "tiktok",
+        link: "./",
+      },
+    ],
   },
 
   form: {

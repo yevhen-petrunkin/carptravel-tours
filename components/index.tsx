@@ -19,6 +19,7 @@ export { default as Services } from "@/components/Services/Services";
 // Career
 
 export { default as Career } from "@/components/Career/Career";
+export { default as CareerReasons } from "@/components/Career/CareerReasons";
 
 // Gallery
 
@@ -27,6 +28,7 @@ export { default as Gallery } from "@/components/Gallery/Gallery";
 // Contacts
 
 export { default as Contacts } from "@/components/Contacts/Contacts";
+export { default as Contact } from "@/components/Contacts/Contact";
 
 // Modals
 

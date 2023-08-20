@@ -1,6 +1,6 @@
 "use client";
 
-import type { navMenuT } from "@/types";
+import type { NavMenuT } from "@/types";
 
 import { navMenu } from "@/constants";
 
@@ -52,7 +52,7 @@ const Navbar = () => {
       </span>
 
       <nav className="hidden md:flex md:gap-[24px] xl:gap-[56px] center-end">
-        {navMenu.map(({ section, link }: navMenuT) => (
+        {navMenu.map(({ section, link }: NavMenuT) => (
           <div
             key={section}
             onClick={() => handleClick(link)}

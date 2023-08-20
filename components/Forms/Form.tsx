@@ -21,7 +21,7 @@ const Form: React.FC<IFormProps> = ({ form, messageHeight, uneven }) => {
         <ul
           className={`flex flex-col gap-[16px] ${
             inputs.length > 2 ? "xl:gap-[24px]" : "xl:flex-row xl:gap-[20px]"
-          } w-full ${uneven && "md:w-[221px]"} xl:w-full`}
+          } w-full ${uneven && "md:w-[221px] md:shrink-0"} xl:w-full`}
         >
           {inputs.map((input) => (
             <li key={input.id} className="w-full">
