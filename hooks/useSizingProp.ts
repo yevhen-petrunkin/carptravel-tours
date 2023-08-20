@@ -4,11 +4,18 @@ import { useState, useEffect } from "react";
 import { useMedia } from "@/hooks";
 
 const useSizingProp = (array: string[]) => {
-  const [sizing, setSizing] = useState(array[0]);
+  const [sizing, setSizing] = useState(
+    array && array.length ? array[0] : "16px"
+  );
 
   const { isMd, isXl } = useMedia();
 
   useEffect(() => {
+    if (!array || !array.length) {
+      console.log("Missing data on sizing prop.");
+      return;
+    }
+
     if (array.length === 1) {
       return;
     }

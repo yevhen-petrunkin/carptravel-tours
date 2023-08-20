@@ -43,7 +43,7 @@ const Form: React.FC<IFormProps> = ({ form, messageHeight, uneven }) => {
         <label
           className={`${
             form?.confirmation ? "flex" : "hidden"
-          } gap-[8px] text-[12px] leading-[1.83] xl:leading-[2] font-extralight cursor-pointer md:mt-[7px] xl:mt-[12px]`}
+          } gap-[8px] md:mt-[7px] xl:mt-[12px] md:w-[222px] xl:w-[290px] text-[12px] leading-[1.83] xl:leading-[2] font-extralight cursor-pointer `}
         >
           <input
             type="checkbox"

@@ -155,3 +155,11 @@ body,
   background-image: url("/assets/icons/error.svg");
   @apply absolute w-[9.25px] h-[9.25px] top-[50%] -translate-y-[50%] -left-[17.63px];
 }
+
+/* Sections */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .career-list li:nth-child(3) > h4 {
+    padding-bottom: 20px;
+  }
+}

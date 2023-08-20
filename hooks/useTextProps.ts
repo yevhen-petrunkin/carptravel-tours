@@ -6,12 +6,21 @@ import { useState, useEffect } from "react";
 import { useMedia } from "@/hooks";
 
 const useTextProps = ({ size, line }: textPropsT) => {
-  const [fontSize, setFontSize] = useState(size[0]);
-  const [lineHeight, setLineHeight] = useState(line[0]);
+  const [fontSize, setFontSize] = useState(
+    size && size.length ? size[0] : "16px"
+  );
+  const [lineHeight, setLineHeight] = useState(
+    line && line.length ? line[0] : 1
+  );
 
   const { isMd, isXl } = useMedia();
 
   useEffect(() => {
+    if (!size || !size.length) {
+      console.log("Missing data on font size prop.");
+      return;
+    }
+
     if (size.length === 1) {
       return;
     }
@@ -30,6 +39,11 @@ const useTextProps = ({ size, line }: textPropsT) => {
   }, [isMd, isXl, size, setFontSize]);
 
   useEffect(() => {
+    if (!line || !line.length) {
+      console.log("Missing data on line height prop.");
+      return;
+    }
+
     if (line.length === 1) {
       return;
     }

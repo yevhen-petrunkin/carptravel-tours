@@ -35,7 +35,7 @@ const Hero = () => {
             size={["14px", "16px", "18px"]}
             line={[1.42, 1.25, 1.33]}
             content={heroData.paragraphs.p01.content}
-            justify
+            align={["justify"]}
           />
 
           <div className="md:mt-[28px] w-full">

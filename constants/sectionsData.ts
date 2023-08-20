@@ -121,8 +121,10 @@ export const careerData = {
         "Your chance to join our passionate team in Carpathian tourism. Seeking talented professionals to share our common mission. ",
     },
     p02: {
-      content:
-        "Don't miss your opportunity!\nFill out the form right now and join our team!",
+      content: "Don't miss your opportunity!",
+    },
+    p03: {
+      content: "Fill out the form right now and join our team!",
     },
   },
 
