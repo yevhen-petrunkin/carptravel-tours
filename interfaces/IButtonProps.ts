@@ -1,5 +1,5 @@
 interface IButtonProps {
-  text: string;
+  text?: string;
   size: string[];
   line: number[];
   wider?: boolean;

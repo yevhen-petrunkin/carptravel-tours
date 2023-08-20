@@ -15,6 +15,12 @@ body,
 
 /* ------ Utility Classes ------ */
 
+.visually-hidden {
+  @apply absolute w-[1px] h-[1px] -m-[1px] p-0 border-none whitespace-nowrap overflow-hidden;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+
 /* Flex */
 
 .center-between {
@@ -119,4 +125,33 @@ body,
 
 .spec span {
   @apply uppercase font-normal tracking-normal;
+}
+
+/* Forms */
+
+.form-label {
+  @apply text-[12px] leading-[2] font-extralight tracking-[0.2em];
+}
+
+.form-field {
+  @apply block mt-[4px] w-full text-[13px] xl:text-[20px] leading-[1.84] xl:leading-[1.33] font-extralight bg-white/5 outline-none;
+}
+
+.form-custom-checkbox::after {
+  content: "";
+  @apply absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[14px] h-[14px] xl:w-[16px] xl:h-[16px] bg-white/10;
+}
+
+.form-checkbox:checked + .form-custom-checkbox::after {
+  @apply bg-white/100;
+}
+
+.form-error {
+  @apply absolute right-0 text-error;
+}
+
+.form-error::before {
+  content: "";
+  background-image: url("/assets/icons/error.svg");
+  @apply absolute w-[9.25px] h-[9.25px] top-[50%] -translate-y-[50%] -left-[17.63px];
 }

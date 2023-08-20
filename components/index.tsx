@@ -46,3 +46,9 @@ export { default as Container } from "@/components/Containers/Container";
 export { default as MainHeading } from "@/components/Text/MainHeading";
 export { default as SectionHeading } from "@/components/Text/SectionHeading";
 export { default as Paragraph } from "@/components/Text/Paragraph";
+
+// Forms
+
+export { default as Form } from "@/components/Forms/Form";
+export { default as Input } from "@/components/Forms/Input";
+export { default as Textarea } from "@/components/Forms/Textarea";

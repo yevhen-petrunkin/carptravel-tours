@@ -29,7 +29,7 @@ const Button: React.FC<IButtonProps> = ({
       type={type ? type : "button"}
       onClick={onClick}
     >
-      {text}
+      {text ? text : "send"}
     </button>
   );
 };

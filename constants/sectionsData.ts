@@ -152,13 +152,12 @@ export const careerData = {
     },
   ],
 
-  formList: {
+  form: {
     inputs: [
       {
         id: "01",
         label: "Full name",
         placeholder: "John Smith",
-        prompt: "",
         name: "username",
         error: "Incorrect name",
       },
@@ -166,7 +165,6 @@ export const careerData = {
         id: "02",
         label: "E-mail",
         placeholder: "johnsmith@email.com",
-        prompt: "",
         name: "email",
         error: "Invalid email",
       },
@@ -174,7 +172,6 @@ export const careerData = {
         id: "03",
         label: "Position",
         placeholder: "Movie maker",
-        prompt: "",
         name: "position",
         error: "Invalid input",
       },
@@ -192,6 +189,9 @@ export const careerData = {
       label: "Message",
       name: "message",
     },
+
+    confirmation: "I confirm my consent to the processing of personal data.",
+    btnText: "send",
   },
 };
 
@@ -238,7 +238,7 @@ export const contactsData = {
     list: ["facebook", "instagram", "youtube", "tiktok"],
   },
 
-  formList: {
+  form: {
     inputs: [
       {
         id: "01",
@@ -262,5 +262,7 @@ export const contactsData = {
       label: "Message",
       name: "message",
     },
+
+    btnText: "send",
   },
 };
