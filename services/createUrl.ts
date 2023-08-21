@@ -1,4 +1,4 @@
-function createUrl(id: string, link: string) {
+function createUrl(id: string, link: string): string {
   switch (id.toLowerCase()) {
     case "phone":
       return `tel:${link}`;

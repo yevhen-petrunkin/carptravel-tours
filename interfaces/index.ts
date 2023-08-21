@@ -14,3 +14,7 @@ export type { default as ITextareaProps } from "@/interfaces/ITexareaProps";
 export type { default as ICareerReasonsProps } from "@/interfaces/ICareerReasonsProps";
 
 export type { default as IContactProps } from "@/interfaces/IContactProps";
+
+export type { default as ICounterProps } from "@/interfaces/ICounterProps";
+export type { default as IServicesMenuProps } from "@/interfaces/IServicesMenuProps";
+export type { default as ISlideProps } from "@/interfaces/ISlideProps";

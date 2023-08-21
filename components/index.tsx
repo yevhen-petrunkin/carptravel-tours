@@ -15,6 +15,9 @@ export { default as About } from "@/components/About/About";
 // Services
 
 export { default as Services } from "@/components/Services/Services";
+export { default as Counter } from "@/components/Services/Counter";
+export { default as ServicesMenu } from "@/components/Services/ServicesMenu";
+export { default as Slide } from "@/components/Services/Slide";
 
 // Career
 

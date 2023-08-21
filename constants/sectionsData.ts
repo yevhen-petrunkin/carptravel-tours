@@ -1,3 +1,9 @@
+import service1 from "@/public/assets/service-photos/service-01.jpg";
+import service2 from "@/public/assets/service-photos/service-02.jpg";
+import service3 from "@/public/assets/service-photos/service-03.jpg";
+import service4 from "@/public/assets/service-photos/service-04.jpg";
+import service5 from "@/public/assets/service-photos/service-05.jpg";
+
 export const heroData = {
   paragraphs: {
     p01: {
@@ -44,7 +50,7 @@ export const servicesData = {
       slogan: "Feel the adrenaline rush",
       paragraph:
         "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
-      photoUrl: "/assets/service-photos/service-01.jpg",
+      photoUrl: service1,
       background: {
         urlSm: "/assets/sm/services/services-sm-01.jpg",
         urlMd: "/assets/md/services/services-md-01.jpg",
@@ -58,7 +64,7 @@ export const servicesData = {
       slogan: "Destroy your limitations",
       paragraph:
         "Overcome the peaks of the Carpathians in a unique way - climbing. Make your own way to the heights and find inner peace in the embrace of the mighty rocks.",
-      photoUrl: "/assets/service-photos/service-02.jpg",
+      photoUrl: service2,
       background: {
         urlSm: "/assets/sm/services/services-sm-02.jpg",
         urlMd: "/assets/md/services/services-md-02.jpg",
@@ -72,7 +78,7 @@ export const servicesData = {
       slogan: "Get Inspired",
       paragraph:
         "Feel Zen over the mountain peaks! Hot air ballooning gives you incredible impressions and panoramas of the Carpathians that seem endless.",
-      photoUrl: "/assets/service-photos/service-03.jpg",
+      photoUrl: service3,
       background: {
         urlSm: "/assets/sm/services/services-sm-03.jpg",
         urlMd: "/assets/md/services/services-md-03.jpg",
@@ -86,7 +92,7 @@ export const servicesData = {
       slogan: "Overcome your fears",
       paragraph:
         "Fly in the sky over the Carpathians! Experienced instructors will help you realize your dream of free flight. Remember the incredible emotions and panoramas from a bird's eye view forever.",
-      photoUrl: "/assets/service-photos/service-04.jpg",
+      photoUrl: service4,
       background: {
         urlSm: "/assets/sm/services/services-sm-04.jpg",
         urlMd: "/assets/md/services/services-md-04.jpg",
@@ -100,7 +106,7 @@ export const servicesData = {
       slogan: "Trust the flow",
       paragraph:
         "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
-      photoUrl: "/assets/service-photos/service-05.jpg",
+      photoUrl: service5,
       background: {
         urlSm: "/assets/sm/services/services-sm-05.jpg",
         urlMd: "/assets/md/services/services-md-05.jpg",
