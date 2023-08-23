@@ -5,7 +5,7 @@ export {
   careerData,
   galleryData,
   contactsData,
-} from "@/constants/sectionsData";
+} from "./sectionsData";
 
-export { default as navMenu } from "@/constants/navMenu";
-export { default as sliderBreakpoints } from "@/constants/sliderBreakpoints";
+export { default as navMenu } from "./navMenu";
+export { default as sliderBreakpoints } from "./sliderBreakpoints";

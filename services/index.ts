@@ -1,4 +1,4 @@
-export { default as createUrl } from "@/services/createUrl";
-export { default as getCurrentNumber } from "@/services/getCurrentNumber";
-export { default as getServicesMenu } from "@/services/getServicesMenu";
-export { default as createSlidesFromPhotos } from "@/services/createSlidesFromPhotos";
+export { default as createUrl } from "./createUrl";
+export { default as getCurrentNumber } from "./getCurrentNumber";
+export { default as getServicesMenu } from "./getServicesMenu";
+export { default as createSlidesFromPhotos } from "./createSlidesFromPhotos";

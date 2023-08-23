@@ -1,6 +1,6 @@
-export { default as Media } from "@/hooks/media/Media";
-export { default as useMedia } from "@/hooks/media/useMedia";
-export { default as useTextProps } from "@/hooks/useTextProps";
-export { default as useSizingProp } from "@/hooks/useSizingProp";
-export { default as useTextAlignProp } from "@/hooks/useTextAlignProp";
-export { default as useBackground } from "@/hooks/useBackground";
+export { default as Media } from "./media/Media";
+export { default as useMedia } from "./media/useMedia";
+export { default as useTextProps } from "./useTextProps";
+export { default as useSizingProp } from "./useSizingProp";
+export { default as useTextAlignProp } from "./useTextAlignProp";
+export { default as useBackground } from "./useBackground";

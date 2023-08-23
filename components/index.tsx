@@ -1,65 +1,65 @@
 // Header
 
-export { default as Header } from "@/components/Header/Header";
-export { default as Logo } from "@/components/Header/Logo";
-export { default as Navbar } from "@/components/Header/Navbar";
+export { default as Header } from "./Header/Header";
+export { default as Logo } from "./Header/Logo";
+export { default as Navbar } from "./Header/Navbar";
 
 // Hero
 
-export { default as Hero } from "@/components/Hero/Hero";
+export { default as Hero } from "./Hero/Hero";
 
 // About
 
-export { default as About } from "@/components/About/About";
+export { default as About } from "./About/About";
 
 // Services
 
-export { default as Services } from "@/components/Services/Services";
-export { default as Counter } from "@/components/Services/Counter";
-export { default as ServicesMenu } from "@/components/Services/ServicesMenu";
-export { default as Slide } from "@/components/Services/Slide";
+export { default as Services } from "./Services/Services";
+export { default as Counter } from "./Services/Counter";
+export { default as ServicesMenu } from "./Services/ServicesMenu";
+export { default as Slide } from "./Services/Slide";
 
 // Career
 
-export { default as Career } from "@/components/Career/Career";
-export { default as CareerReasons } from "@/components/Career/CareerReasons";
+export { default as Career } from "./Career/Career";
+export { default as CareerReasons } from "./Career/CareerReasons";
 
 // Gallery
 
-export { default as Gallery } from "@/components/Gallery/Gallery";
-export { default as GallerySlider } from "@/components/Gallery/GallerySlider";
+export { default as Gallery } from "./Gallery/Gallery";
+export { default as GallerySlider } from "./Gallery/GallerySlider";
 
 // Contacts
 
-export { default as Contacts } from "@/components/Contacts/Contacts";
-export { default as Contact } from "@/components/Contacts/Contact";
+export { default as Contacts } from "./Contacts/Contacts";
+export { default as Contact } from "./Contacts/Contact";
 
 // Modals
 
-export { default as NavMenuModal } from "@/components/Modals/NavMenuModal";
+export { default as NavMenuModal } from "./Modals/NavMenuModal";
 
 // Buttons
 
-export { default as Button } from "@/components/Buttons/Button";
-export { default as StylishButton } from "@/components/Buttons/StylishButton";
+export { default as Button } from "./Buttons/Button";
+export { default as StylishButton } from "./Buttons/StylishButton";
 
 // Containers
 
-export { default as Container } from "@/components/Containers/Container";
+export { default as Container } from "./Containers/Container";
 
 // Text
 
-export { default as MainHeading } from "@/components/Text/MainHeading";
-export { default as SectionHeading } from "@/components/Text/SectionHeading";
-export { default as Paragraph } from "@/components/Text/Paragraph";
+export { default as MainHeading } from "./Text/MainHeading";
+export { default as SectionHeading } from "./Text/SectionHeading";
+export { default as Paragraph } from "./Text/Paragraph";
 
 // Forms
 
-export { default as Form } from "@/components/Forms/Form";
-export { default as Input } from "@/components/Forms/Input";
-export { default as Textarea } from "@/components/Forms/Textarea";
+export { default as Form } from "./Forms/Form";
+export { default as Input } from "./Forms/Input";
+export { default as Textarea } from "./Forms/Textarea";
 
 // Other
 
-export { default as Loader } from "@/components/Loader";
-export { default as EmptyState } from "@/components/EmptyState";
+export { default as Loader } from "./Loader";
+export { default as EmptyState } from "./EmptyState";

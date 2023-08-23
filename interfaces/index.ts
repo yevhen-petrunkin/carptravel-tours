@@ -1,25 +1,25 @@
-export type { default as IErrorProps } from "@/interfaces/IErrorProps";
+export type { default as IErrorProps } from "./IErrorProps";
 
-export type { default as INavMenuModalProps } from "@/interfaces/INavMenuModalProps";
+export type { default as INavMenuModalProps } from "./INavMenuModalProps";
 
-export type { default as IContainerProps } from "@/interfaces/IContainerProps";
+export type { default as IContainerProps } from "./IContainerProps";
 
-export type { default as IButtonProps } from "@/interfaces/IButtonProps";
-export type { default as IStylishButtonProps } from "@/interfaces/IStylishButtonProps";
+export type { default as IButtonProps } from "./IButtonProps";
+export type { default as IStylishButtonProps } from "./IStylishButtonProps";
 
-export type { default as ISectionHeadingProps } from "@/interfaces/ISectionHeadingProps";
-export type { default as IParagraphProps } from "@/interfaces/IParagraphProps";
+export type { default as ISectionHeadingProps } from "./ISectionHeadingProps";
+export type { default as IParagraphProps } from "./IParagraphProps";
 
-export type { default as IFormProps } from "@/interfaces/IFormProps";
-export type { default as IInputProps } from "@/interfaces/IInputProps";
-export type { default as ITextareaProps } from "@/interfaces/ITexareaProps";
+export type { default as IFormProps } from "./IFormProps";
+export type { default as IInputProps } from "./IInputProps";
+export type { default as ITextareaProps } from "./ITexareaProps";
 
-export type { default as ICareerReasonsProps } from "@/interfaces/ICareerReasonsProps";
+export type { default as ICareerReasonsProps } from "./ICareerReasonsProps";
 
-export type { default as IContactProps } from "@/interfaces/IContactProps";
+export type { default as IContactProps } from "./IContactProps";
 
-export type { default as ICounterProps } from "@/interfaces/ICounterProps";
-export type { default as IServicesMenuProps } from "@/interfaces/IServicesMenuProps";
-export type { default as ISlideProps } from "@/interfaces/ISlideProps";
+export type { default as ICounterProps } from "./ICounterProps";
+export type { default as IServicesMenuProps } from "./IServicesMenuProps";
+export type { default as ISlideProps } from "./ISlideProps";
 
-export type { default as IGallerySliderProps } from "@/interfaces/IGallerySliderProps";
+export type { default as IGallerySliderProps } from "./IGallerySliderProps";
