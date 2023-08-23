@@ -58,3 +58,8 @@ export { default as Paragraph } from "@/components/Text/Paragraph";
 export { default as Form } from "@/components/Forms/Form";
 export { default as Input } from "@/components/Forms/Input";
 export { default as Textarea } from "@/components/Forms/Textarea";
+
+// Other
+
+export { default as Loader } from "@/components/Loader";
+export { default as EmptyState } from "@/components/EmptyState";

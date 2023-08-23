@@ -1,5 +1,5 @@
 import type { FormInputT, TextareaT } from "@/types";
-import { SubmitHandler, FieldValues } from "react-hook-form";
+import { FieldValues } from "react-hook-form";
 
 interface IFormProps {
   form: {

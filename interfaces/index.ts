@@ -1,3 +1,5 @@
+export type { default as IErrorProps } from "@/interfaces/IErrorProps";
+
 export type { default as INavMenuModalProps } from "@/interfaces/INavMenuModalProps";
 
 export type { default as IContainerProps } from "@/interfaces/IContainerProps";

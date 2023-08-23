@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  
-} */
-
 html,
 body,
 :root {
@@ -57,7 +53,6 @@ body,
 
 .bg-about {
   @apply bg-about-sm md:bg-about-md xl:bg-about-xl;
-  scrollbar-gutter: stable;
 }
 
 .bg-career {
