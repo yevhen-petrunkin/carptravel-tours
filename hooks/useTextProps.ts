@@ -17,7 +17,6 @@ const useTextProps = ({ size, line }: TextPropsT) => {
 
   useEffect(() => {
     if (!size || !size.length) {
-      console.log("Missing data on font size prop.");
       return;
     }
 
@@ -40,7 +39,6 @@ const useTextProps = ({ size, line }: TextPropsT) => {
 
   useEffect(() => {
     if (!line || !line.length) {
-      console.log("Missing data on line height prop.");
       return;
     }
 

@@ -12,7 +12,6 @@ const useSizingProp = (array: string[]) => {
 
   useEffect(() => {
     if (!array || !array.length) {
-      console.log("Missing data on sizing prop.");
       return;
     }
 

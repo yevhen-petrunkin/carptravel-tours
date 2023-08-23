@@ -6,7 +6,7 @@ const About = () => {
   const { heading, paragraphs } = aboutData;
 
   return (
-    <section className="bg-about cover-norepeat ">
+    <section id="about" className="bg-about cover-norepeat ">
       <Container>
         <div className="md:grid md:grid-cols-[auto_243px_220px] xl:grid-cols-[auto_306px_297px] md:grid-rows-[auto_auto_auto]">
           <div className="md:col-start-1 md:row-start-1 md:col-span-2 ">

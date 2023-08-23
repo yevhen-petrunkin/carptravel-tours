@@ -1,10 +1,12 @@
 "use client";
 
+import type { IStylishButtonProps } from "@/interfaces";
+
 import { useTextProps } from "@/hooks";
 
-import type { IButtonProps } from "@/interfaces";
+import { Link } from "react-scroll";
 
-const StylishButton: React.FC<IButtonProps> = ({
+const StylishButton: React.FC<IStylishButtonProps> = ({
   text,
   size,
   line,
@@ -15,6 +17,7 @@ const StylishButton: React.FC<IButtonProps> = ({
   color,
   customClass,
   onClick,
+  link,
 }) => {
   const { fontSize, lineHeight } = useTextProps({ size, line });
 
@@ -30,7 +33,9 @@ const StylishButton: React.FC<IButtonProps> = ({
       type={type ? type : "button"}
       onClick={onClick}
     >
-      {text}
+      <Link to={link} spy={true} smooth={true} offset={0} duration={1000}>
+        {text}
+      </Link>
     </button>
   );
 };

@@ -4,7 +4,7 @@ import { Container, SectionHeading, GallerySlider } from "@/components";
 
 const Gallery = () => {
   return (
-    <section className="bg-gallery cover-norepeat">
+    <section id="gallery" className="bg-gallery cover-norepeat">
       <Container>
         <div className="md:text-center">
           <SectionHeading

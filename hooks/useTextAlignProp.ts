@@ -14,7 +14,6 @@ const useTextAlignProp = (array: TextAlignT[] | undefined) => {
 
   useEffect(() => {
     if (!array || !array.length) {
-      console.log("Missing data on text align prop.");
       return;
     }
 

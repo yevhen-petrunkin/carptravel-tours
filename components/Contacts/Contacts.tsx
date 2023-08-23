@@ -20,7 +20,10 @@ const Contacts = () => {
 
   return (
     <footer>
-      <section className="bg-contacts cover-norepeat max-w-[1440px]">
+      <section
+        id="contacts"
+        className="bg-contacts cover-norepeat max-w-[1440px]"
+      >
         <Container>
           <SectionHeading
             content={heading.content}

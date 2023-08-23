@@ -3,23 +3,23 @@ import type { NavMenuT } from "@/types";
 const navMenu: NavMenuT[] = [
   {
     section: "About",
-    link: "./",
+    link: "about",
   },
   {
     section: "Services",
-    link: "./",
+    link: "services",
   },
   {
     section: "Career",
-    link: "./",
+    link: "career",
   },
   {
     section: "Gallery",
-    link: "./",
+    link: "gallery",
   },
   {
     section: "Contacts",
-    link: "./",
+    link: "contacts",
   },
 ];
 

@@ -4,24 +4,14 @@ import type { NavMenuT } from "@/types";
 
 import { navMenu } from "@/constants";
 
-import { useRouter } from "next/navigation";
 import { useState, useCallback } from "react";
+
+import { Link } from "react-scroll";
 
 import { NavMenuModal, Button } from "@/components";
 
 const Navbar = () => {
-  const router = useRouter();
   const [modalOpen, setModalOpen] = useState<boolean>(false);
-
-  const handleClick = useCallback(
-    (link: string): void => {
-      if (!link) {
-        return;
-      }
-      router.push(link);
-    },
-    [router]
-  );
 
   const onOpen = useCallback(() => {
     setModalOpen(true);
@@ -53,13 +43,17 @@ const Navbar = () => {
 
       <nav className="hidden md:flex md:gap-[24px] xl:gap-[56px] center-end">
         {navMenu.map(({ section, link }: NavMenuT) => (
-          <div
+          <Link
             key={section}
-            onClick={() => handleClick(link)}
             className="cursor-pointer"
+            to={link}
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1000}
           >
             {section}
-          </div>
+          </Link>
         ))}
       </nav>
 

@@ -46,7 +46,12 @@ const GallerySlider: React.FC<IGallerySliderProps> = ({ photos }) => {
           {slides.map((slide: GalleryPhotoT, index: number) => (
             <SwiperSlide key={`${slide.id}_${index}_${slide.url}`}>
               <div className="relative max-w-[440px] aspect-[1.5/1] drop-shadow-[0_0_15px_rgba(0,0,0,0.25)]">
-                <Image src={slide.url} alt={`photo-${index + 1}`} fill />
+                <Image
+                  src={slide.url}
+                  alt={`photo-${index + 1}`}
+                  fill
+                  sizes="100vw, (min-width: 768px) 50vw"
+                />
               </div>
             </SwiperSlide>
           ))}
@@ -85,7 +90,12 @@ const GallerySlider: React.FC<IGallerySliderProps> = ({ photos }) => {
                   className={`relative -left-[90px] w-[415px] h-[294px] drop-shadow-[0_0_15px_rgba(0,0,0,0.25)] xl:drop-shadow-none
                    `}
                 >
-                  <Image src={slide.url} alt={`photo-${index + 1}`} fill />
+                  <Image
+                    src={slide.url}
+                    alt={`photo-${index + 1}`}
+                    fill
+                    sizes="100vw, (min-width: 768px) 50vw"
+                  />
                 </div>
               )}
             </SwiperSlide>

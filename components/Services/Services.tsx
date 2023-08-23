@@ -50,7 +50,7 @@ const Services = () => {
   }, [counter]);
 
   return (
-    <section>
+    <section id="services">
       <Swiper
         ref={sliderRef}
         className="h-full"

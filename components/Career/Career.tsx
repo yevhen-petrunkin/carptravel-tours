@@ -25,7 +25,10 @@ const Career = () => {
   };
 
   return (
-    <section className="bg-career bg-auto bg-[center_top] md:bg-cover md:bg-center md:bg-no-repeat">
+    <section
+      id="career"
+      className="bg-career bg-auto bg-[center_top] md:bg-cover md:bg-center md:bg-no-repeat"
+    >
       <Container>
         <div className="md:grid md:grid-cols-[auto_231.5px_231.5px]  xl:grid-cols-[auto_302px_302px] md:grid-rows-[auto_auto_auto]">
           <div className="md:col-start-1 md:row-start-1 md:col-span-2">

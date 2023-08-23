@@ -12,13 +12,11 @@ const useBackground = (bg: ServiceBackgroundT) => {
 
   useEffect(() => {
     if (!bg) {
-      console.log("Missing data on background.");
       return;
     }
 
     if (!isMd && !isXl) {
       if (!bg.urlSm) {
-        console.log("Missing data on sm background.");
         return;
       }
       setBackground(bg.urlSm);
@@ -26,7 +24,6 @@ const useBackground = (bg: ServiceBackgroundT) => {
 
     if (isMd) {
       if (!bg.urlMd) {
-        console.log("Missing data on md background.");
         return;
       }
       setBackground(bg.urlMd);
@@ -35,7 +32,6 @@ const useBackground = (bg: ServiceBackgroundT) => {
     if (isXl) {
       if (!bg.urlXl) {
         if (!bg.urlXl) {
-          console.log("Missing data on xl background.");
           return;
         }
       }

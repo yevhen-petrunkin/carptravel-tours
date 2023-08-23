@@ -45,6 +45,7 @@ const Hero = () => {
               line={[2.66, 1.21, 1.21]}
               weight={700}
               onClick={handleClick}
+              link="contacts"
             />
           </div>
         </div>
