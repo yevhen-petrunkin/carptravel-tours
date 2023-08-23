@@ -1,6 +1,6 @@
 "use client";
 
-import {ITextareaProps} from "@/interfaces/ITexareaProps";
+import { ITextareaProps } from "@/interfaces";
 
 import { useSizingProp } from "@/hooks";
 

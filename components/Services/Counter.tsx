@@ -1,6 +1,6 @@
 "use client";
 
-import { ICounterProps } from "@/interfaces/ICounterProps";
+import { ICounterProps } from "@/interfaces";
 
 const Counter: React.FC<ICounterProps> = ({ number, length }) => {
   return (

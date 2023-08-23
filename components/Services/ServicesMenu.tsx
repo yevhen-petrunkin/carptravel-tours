@@ -1,6 +1,6 @@
 "use client";
 
-import {IServicesMenuProps} from "@/interfaces/IServicesMenuProps";
+import { IServicesMenuProps } from "@/interfaces";
 
 import Image from "next/image";
 

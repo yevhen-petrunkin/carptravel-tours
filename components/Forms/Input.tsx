@@ -1,6 +1,6 @@
 "use client";
 
-import {IInputProps} from "@/interfaces/IInputProps";
+import { IInputProps } from "@/interfaces";
 
 const Input: React.FC<IInputProps> = ({ input, register, errors }) => {
   const { label, placeholder, prompt, type, name, error, required, pattern } =

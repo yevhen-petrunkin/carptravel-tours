@@ -1,6 +1,6 @@
 "use client";
 
-import { ISectionHeadingProps } from "@/interfaces/ISectionHeadingProps";
+import { ISectionHeadingProps } from "@/interfaces";
 
 const SectionHeading: React.FC<ISectionHeadingProps> = ({
   highlight,
