@@ -1,3 +1,1 @@
-type ServiceMenuT = { menuItem: string; index: number }[];
-
-export default ServiceMenuT;
+export type ServiceMenuT = { menuItem: string; index: number }[];

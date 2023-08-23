@@ -1,7 +1,7 @@
 "use client";
 
-import NavMenuT from "@/types/NavMenuT";
-import INavMenuModalProps from "@/interfaces/INavMenuModalProps";
+import {NavMenuT} from "@/types/NavMenuT";
+import {INavMenuModalProps} from "@/interfaces/INavMenuModalProps";
 
 import { navMenu } from "@/constants";
 

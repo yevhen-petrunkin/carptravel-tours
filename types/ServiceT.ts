@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 
-type ServiceT = {
+export type ServiceT = {
   id: string;
   menuItem: string;
   slogan: string;
@@ -12,5 +12,3 @@ type ServiceT = {
     urlXl: string;
   };
 };
-
-export default ServiceT;

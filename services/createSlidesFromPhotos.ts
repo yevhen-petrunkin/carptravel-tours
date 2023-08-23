@@ -1,4 +1,4 @@
-import GalleryPhotoT from "@/types/GalleryPhotoT";
+import { GalleryPhotoT } from "@/types/GalleryPhotoT";
 
 function createSlidesFromPhotos(photos: GalleryPhotoT[]): GalleryPhotoT[] {
   if (photos.length >= 20) {

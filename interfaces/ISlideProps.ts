@@ -1,7 +1,7 @@
-import ServiceT from "@/types/ServiceT";
-import ServiceMenuT from "@/types/ServiceMenuT";
+import { ServiceT } from "@/types/ServiceT";
+import { ServiceMenuT } from "@/types/ServiceMenuT";
 
-interface ISlideProps {
+export interface ISlideProps {
   heading: {
     content: string;
     highlight: string;
@@ -13,5 +13,3 @@ interface ISlideProps {
   index: number;
   handleClick: (index: number) => void;
 }
-
-export default ISlideProps;

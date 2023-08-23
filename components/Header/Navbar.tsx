@@ -1,6 +1,6 @@
 "use client";
 
-import NavMenuT from "@/types/NavMenuT";
+import {NavMenuT} from "@/types/NavMenuT";
 
 import { navMenu } from "@/constants";
 

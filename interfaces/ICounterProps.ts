@@ -1,6 +1,4 @@
-interface ICounterProps {
+export interface ICounterProps {
   number: string;
   length: string;
 }
-
-export default ICounterProps;

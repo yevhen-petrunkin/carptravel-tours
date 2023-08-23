@@ -1,8 +1,8 @@
-import FormInputT from "@/types/FormInputT";
-import TextareaT from "@/types/TextareaT";
+import { FormInputT } from "@/types/FormInputT";
+import { TextareaT } from "@/types/TextareaT";
 import { FieldValues } from "react-hook-form";
 
-interface IFormProps {
+export interface IFormProps {
   form: {
     inputs: FormInputT[];
     textarea: TextareaT;
@@ -13,5 +13,3 @@ interface IFormProps {
   uneven?: boolean;
   onSubmit: (formData: FieldValues) => void;
 }
-
-export default IFormProps;

@@ -1,4 +1,4 @@
-import NavMenuT from "@/types/NavMenuT";
+import { NavMenuT } from "@/types/NavMenuT";
 
 const navMenu: NavMenuT[] = [
   {

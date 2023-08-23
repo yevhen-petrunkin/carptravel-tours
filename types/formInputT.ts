@@ -1,4 +1,4 @@
-type FormInputT = {
+export type FormInputT = {
   id: string;
   label: string;
   type?: string;
@@ -9,5 +9,3 @@ type FormInputT = {
   pattern?: RegExp;
   error: string;
 };
-
-export default FormInputT;

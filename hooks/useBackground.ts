@@ -1,6 +1,6 @@
 "use client";
 
-import ServiceBackgroundT from "@/types/ServiceBackgroundT";
+import { ServiceBackgroundT } from "@/types/ServiceBackgroundT";
 
 import { useState, useEffect } from "react";
 import { useMedia } from "@/hooks";

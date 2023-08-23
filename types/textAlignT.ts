@@ -1,3 +1,1 @@
-type TextAlignT = "right" | "left" | "justify" | "center";
-
-export default TextAlignT;
+export type TextAlignT = "right" | "left" | "justify" | "center";

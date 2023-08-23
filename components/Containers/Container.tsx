@@ -1,4 +1,4 @@
-import IContainerProps from "@/interfaces/IContainerProps";
+import { IContainerProps } from "@/interfaces/IContainerProps";
 
 const Container: React.FC<IContainerProps> = ({
   isHero,

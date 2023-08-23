@@ -1,7 +1,5 @@
-import CareerReasonT from "@/types/CareerReasonT";
+import { CareerReasonT } from "@/types/CareerReasonT";
 
-interface ICareerReasonsProps {
+export interface ICareerReasonsProps {
   list: CareerReasonT[];
 }
-
-export default ICareerReasonsProps;

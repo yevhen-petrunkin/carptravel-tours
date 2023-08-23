@@ -1,7 +1,5 @@
-import GalleryPhotoT from "@/types/GalleryPhotoT";
+import { GalleryPhotoT } from "@/types/GalleryPhotoT";
 
-interface IGallerySliderProps {
+export interface IGallerySliderProps {
   photos: GalleryPhotoT[];
 }
-
-export default IGallerySliderProps;

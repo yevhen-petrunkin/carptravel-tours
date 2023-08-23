@@ -1,4 +1,4 @@
-import IContactProps from "@/interfaces/IContactProps";
+import {IContactProps} from "@/interfaces/IContactProps";
 
 import { createUrl } from "@/services";
 

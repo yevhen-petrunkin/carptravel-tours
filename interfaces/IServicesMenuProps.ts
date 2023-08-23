@@ -1,9 +1,7 @@
-import ServiceMenuT from "@/types/ServiceMenuT";
+import { ServiceMenuT } from "@/types/ServiceMenuT";
 
-interface IServicesMenuProps {
+export interface IServicesMenuProps {
   menu: ServiceMenuT;
   slideIndex: number;
   handleClick: (index: number) => void;
 }
-
-export default IServicesMenuProps;

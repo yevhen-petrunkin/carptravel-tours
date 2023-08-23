@@ -1,11 +1,9 @@
-import TextAlignT from "@/types/TextAlignT";
+import { TextAlignT } from "@/types/TextAlignT";
 
-interface IParagraphProps {
+export interface IParagraphProps {
   size: string[];
   line: number[];
   highlight?: string;
   content: string;
   align?: TextAlignT[];
 }
-
-export default IParagraphProps;

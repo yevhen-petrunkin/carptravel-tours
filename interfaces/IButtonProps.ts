@@ -1,4 +1,4 @@
-interface IButtonProps {
+export interface IButtonProps {
   text?: string;
   size: string[];
   line: number[];
@@ -10,5 +10,3 @@ interface IButtonProps {
   customClass?: string;
   onClick: () => void;
 }
-
-export default IButtonProps;

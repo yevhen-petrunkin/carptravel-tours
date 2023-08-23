@@ -1,6 +1,6 @@
 "use client";
 
-import IStylishButtonProps from "@/interfaces/IStylishButtonProps";
+import { IStylishButtonProps } from "@/interfaces/IStylishButtonProps";
 
 import { useTextProps } from "@/hooks";
 

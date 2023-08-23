@@ -1,8 +1,6 @@
-import ContactT from "@/types/ContactT";
+import { ContactT } from "@/types/ContactT";
 
-interface IContactProps {
+export interface IContactProps {
   contact: ContactT;
   changeable?: boolean;
 }
-
-export default IContactProps;

@@ -1,6 +1,4 @@
-interface INavMenuModalProps {
+export interface INavMenuModalProps {
   isOpen: boolean;
   onClose: () => void;
 }
-
-export default INavMenuModalProps;
