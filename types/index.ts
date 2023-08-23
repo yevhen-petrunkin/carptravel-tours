@@ -13,3 +13,6 @@ export type { default as ContactT } from "@/types/ContactT";
 export type { default as ServiceT } from "@/types/ServiceT";
 export type { default as ServiceMenuT } from "@/types/ServiceMenuT";
 export type { default as ServiceBackgroundT } from "@/types/ServiceBackgroundT";
+
+export type { default as GalleryPhotoT } from "@/types/GalleryPhotoT";
+export type { default as GallerySlideT } from "@/types/GalleryPhotoT";

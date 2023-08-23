@@ -1,4 +1,8 @@
+"use client";
+
 import { careerData } from "@/constants";
+
+import { SubmitHandler, FieldValues } from "react-hook-form";
 
 import {
   Container,
@@ -10,6 +14,15 @@ import {
 
 const Career = () => {
   const { heading, paragraphs, list, form } = careerData;
+
+  const onSubmit: SubmitHandler<FieldValues> = (formData: FieldValues) => {
+    const displayedData = Object.entries(formData).reduce(
+      (aggr, item) => aggr + `${item[0]}: ${item[1]}\n`,
+      "Submitted Data:\n"
+    );
+    console.log(displayedData);
+    alert(displayedData);
+  };
 
   return (
     <section className="bg-career bg-auto bg-[center_top] md:bg-cover md:bg-center md:bg-no-repeat">
@@ -47,7 +60,11 @@ const Career = () => {
           </div>
 
           <div className="mt-[24px] md:mt-[32px] xl:mt-[14px] md:col-start-2 md:row-start-3 md:col-span-2 md:w-[463px] xl:w-[604px]">
-            <Form form={form} messageHeight={["196px", "234px", "268px"]} />
+            <Form
+              form={form}
+              messageHeight={["196px", "234px", "268px"]}
+              onSubmit={onSubmit}
+            />
           </div>
         </div>
       </Container>

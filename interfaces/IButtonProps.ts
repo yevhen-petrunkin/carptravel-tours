@@ -7,6 +7,7 @@ interface IButtonProps {
   lowercase?: boolean;
   weight?: number;
   color?: string;
+  customClass?: string;
   onClick: () => void;
 }
 

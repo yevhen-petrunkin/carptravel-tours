@@ -1,4 +1,5 @@
 import type { FormInputT, TextareaT } from "@/types";
+import { SubmitHandler, FieldValues } from "react-hook-form";
 
 interface IFormProps {
   form: {
@@ -9,6 +10,7 @@ interface IFormProps {
   };
   messageHeight: string[];
   uneven?: boolean;
+  onSubmit: (formData: FieldValues) => void;
 }
 
 export default IFormProps;

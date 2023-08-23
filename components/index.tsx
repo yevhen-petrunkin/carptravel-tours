@@ -27,6 +27,7 @@ export { default as CareerReasons } from "@/components/Career/CareerReasons";
 // Gallery
 
 export { default as Gallery } from "@/components/Gallery/Gallery";
+export { default as GallerySlider } from "@/components/Gallery/GallerySlider";
 
 // Contacts
 

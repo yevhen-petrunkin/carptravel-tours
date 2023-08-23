@@ -4,7 +4,7 @@ import type { ITextareaProps } from "@/interfaces";
 
 import { useSizingProp } from "@/hooks";
 
-const Textarea: React.FC<ITextareaProps> = ({ textarea, height }) => {
+const Textarea: React.FC<ITextareaProps> = ({ textarea, height, register }) => {
   const sizing = useSizingProp(height);
 
   return (
@@ -13,7 +13,7 @@ const Textarea: React.FC<ITextareaProps> = ({ textarea, height }) => {
       <textarea
         style={{ height: sizing }}
         className="form-field resize-none"
-        name={textarea.name}
+        {...register(textarea.name, { required: textarea.required })}
       />
     </label>
   );

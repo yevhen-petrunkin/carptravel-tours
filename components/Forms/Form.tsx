@@ -2,13 +2,40 @@
 
 import { IFormProps } from "@/interfaces";
 
+import { useForm, FieldValues } from "react-hook-form";
+import { useEffect } from "react";
+
 import { Input, Textarea, Button } from "@/components";
 
-const Form: React.FC<IFormProps> = ({ form, messageHeight, uneven }) => {
+const Form: React.FC<IFormProps> = ({
+  form,
+  messageHeight,
+  uneven,
+  onSubmit,
+}) => {
   const { inputs, textarea } = form;
 
+  const {
+    register,
+    reset,
+    handleSubmit,
+    formState: { errors, isSubmitSuccessful },
+  } = useForm<FieldValues>();
+
+  const needConfirm = form.confirmation ? true : false;
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      reset();
+    }
+  }, [reset, isSubmitSuccessful]);
+
   return (
-    <form className="flex flex-col gap-[16px] md:gap-[9px] xl:gap-[24px]">
+    <form
+      className="flex flex-col gap-[16px] md:gap-[9px] xl:gap-[24px]"
+      onSubmit={handleSubmit(onSubmit)}
+      noValidate
+    >
       <div
         className={`flex flex-col gap-[16px] md:flex-row md:gap-[20px] md:justify-center ${
           inputs.length > 2
@@ -25,7 +52,7 @@ const Form: React.FC<IFormProps> = ({ form, messageHeight, uneven }) => {
         >
           {inputs.map((input) => (
             <li key={input.id} className="w-full">
-              <Input input={input} />
+              <Input input={input} register={register} errors={errors} />
             </li>
           ))}
         </ul>
@@ -33,7 +60,11 @@ const Form: React.FC<IFormProps> = ({ form, messageHeight, uneven }) => {
         {/* Texarea */}
 
         <div className="w-full">
-          <Textarea textarea={textarea} height={messageHeight} />
+          <Textarea
+            textarea={textarea}
+            height={messageHeight}
+            register={register}
+          />
         </div>
       </div>
 
@@ -42,13 +73,15 @@ const Form: React.FC<IFormProps> = ({ form, messageHeight, uneven }) => {
 
         <label
           className={`${
-            form?.confirmation ? "flex" : "hidden"
+            needConfirm ? "flex" : "hidden"
           } gap-[8px] md:mt-[7px] xl:mt-[12px] md:w-[222px] xl:w-[290px] text-[12px] leading-[1.83] xl:leading-[2] font-extralight cursor-pointer `}
         >
           <input
             type="checkbox"
             className="visually-hidden form-checkbox"
-            name="confirm"
+            {...register("confirm", {
+              required: needConfirm,
+            })}
           />
 
           <span className="relative shrink-0 w-[22px] h-[22px] xl:w-[24px] xl:h-[24px] border-white border-[1px] cursor-pointer form-custom-checkbox" />

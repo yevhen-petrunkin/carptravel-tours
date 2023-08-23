@@ -1,9 +1,22 @@
+"use client";
+
 import { contactsData } from "@/constants";
+
+import { SubmitHandler, FieldValues } from "react-hook-form";
 
 import { Container, SectionHeading, Form, Contact } from "@/components";
 
 const Contacts = () => {
   const { heading, phone, email, media, form } = contactsData;
+
+  const onSubmit: SubmitHandler<FieldValues> = (formData: FieldValues) => {
+    const displayedData = Object.entries(formData).reduce(
+      (aggr, item) => aggr + `${item[0]}: ${item[1]}\n`,
+      "Submitted Data:\n"
+    );
+    console.log(displayedData);
+    alert(displayedData);
+  };
 
   return (
     <footer>
@@ -30,6 +43,7 @@ const Contacts = () => {
                 form={form}
                 messageHeight={["193px", "221px", "174px"]}
                 uneven
+                onSubmit={onSubmit}
               />
             </div>
           </div>

@@ -13,6 +13,7 @@ const Button: React.FC<IButtonProps> = ({
   lowercase,
   weight,
   color,
+  customClass,
   onClick,
 }) => {
   const { fontSize, lineHeight } = useTextProps({ size, line });
@@ -25,7 +26,7 @@ const Button: React.FC<IButtonProps> = ({
       style={{ fontSize, fontWeight, color: textColor, lineHeight }}
       className={`${lowercase ? "lowercase" : "uppercase"} ${
         wider && "tracking-[0.1em]"
-      }`}
+      } ${customClass && customClass}`}
       type={type ? type : "button"}
       onClick={onClick}
     >

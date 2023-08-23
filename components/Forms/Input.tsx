@@ -2,9 +2,13 @@
 
 import { IInputProps } from "@/interfaces";
 
-const Input: React.FC<IInputProps> = ({ input }) => {
-  const { label, placeholder, prompt, name, error } = input;
-  const isError = false;
+const Input: React.FC<IInputProps> = ({ input, register, errors }) => {
+  const { label, placeholder, prompt, type, name, error, required, pattern } =
+    input;
+
+  const usedPattern: RegExp = pattern ? pattern : /^.*$/;
+
+  const hasError = errors[name];
 
   return (
     <label className="relative form-label">
@@ -14,9 +18,12 @@ const Input: React.FC<IInputProps> = ({ input }) => {
         className={`form-field ${
           prompt ? "pl-[40px] xl:pl-[58px]" : "pl-[8px]"
         } placeholder-white/20`}
-        type="text"
+        type={type ? type : "text"}
         placeholder={placeholder}
-        name={name}
+        {...register(name, {
+          required,
+          pattern: { value: usedPattern, message: error },
+        })}
       />
 
       <span
@@ -27,9 +34,7 @@ const Input: React.FC<IInputProps> = ({ input }) => {
         {prompt}
       </span>
 
-      <span className={`${isError ? "block" : "hidden"} form-label form-error`}>
-        {error}
-      </span>
+      {hasError && <span className={`form-label form-error`}>{error}</span>}
     </label>
   );
 };

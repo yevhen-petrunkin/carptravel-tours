@@ -19,10 +19,13 @@ const Services = () => {
 
   const [counter, setCounter] = useState<number>(0);
 
-  const currentNumber = useMemo(() => getCurrentNumber(counter), [counter]);
+  const currentNumber = useMemo(
+    (): string => getCurrentNumber(counter),
+    [counter]
+  );
 
   const currentLength = useMemo(
-    () => getCurrentNumber(slides.length - 1),
+    (): string => getCurrentNumber(slides.length - 1),
     [slides.length]
   );
 
@@ -37,11 +40,11 @@ const Services = () => {
     [setCounter]
   );
 
-  const slider = useRef<SwiperRef | null>(null);
+  const sliderRef = useRef<SwiperRef | null>(null);
 
   useEffect(() => {
-    if (slider.current) {
-      const swiper = slider.current.swiper;
+    if (sliderRef.current) {
+      const swiper = sliderRef.current.swiper;
       swiper.slideTo(counter);
     }
   }, [counter]);
@@ -49,7 +52,7 @@ const Services = () => {
   return (
     <section>
       <Swiper
-        ref={slider}
+        ref={sliderRef}
         className="h-full"
         modules={[EffectFade]}
         effect="fade"
