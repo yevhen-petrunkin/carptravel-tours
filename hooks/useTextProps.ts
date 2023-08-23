@@ -1,6 +1,6 @@
 "use client";
 
-import type { TextPropsT } from "@/types";
+import TextPropsT from "@/types/TextPropsT";
 
 import { useState, useEffect } from "react";
 import { useMedia } from "@/hooks";

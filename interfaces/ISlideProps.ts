@@ -1,4 +1,5 @@
-import type { ServiceT, ServiceMenuT } from "@/types";
+import ServiceT from "@/types/ServiceT";
+import ServiceMenuT from "@/types/ServiceMenuT";
 
 interface ISlideProps {
   heading: {

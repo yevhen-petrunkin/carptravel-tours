@@ -1,4 +1,4 @@
-import type { ContactT } from "@/types";
+import ContactT from "@/types/ContactT";
 
 interface IContactProps {
   contact: ContactT;

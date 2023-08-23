@@ -1,6 +1,6 @@
 "use client";
 
-import { TextAlignT } from "@/types";
+import TextAlignT from "@/types/TextAlignT";
 
 import { useState, useEffect } from "react";
 import { useMedia } from "@/hooks";

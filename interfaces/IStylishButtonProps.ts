@@ -1,4 +1,4 @@
-import type { IButtonProps } from "@/interfaces";
+import IButtonProps from "@/interfaces/IButtonProps";
 
 interface IStylishButtonProps extends IButtonProps {
   link: string;

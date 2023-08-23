@@ -1,6 +1,6 @@
 "use client";
 
-import type { ISlideProps } from "@/interfaces";
+import ISlideProps from "@/interfaces/ISlideProps";
 
 import { useBackground } from "@/hooks";
 

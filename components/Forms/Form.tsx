@@ -1,6 +1,6 @@
 "use client";
 
-import { IFormProps } from "@/interfaces";
+import IFormProps from "@/interfaces/IFormProps";
 
 import { useForm, FieldValues } from "react-hook-form";
 import { useEffect } from "react";

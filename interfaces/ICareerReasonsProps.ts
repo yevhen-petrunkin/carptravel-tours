@@ -1,4 +1,4 @@
-import type { CareerReasonT } from "@/types";
+import CareerReasonT from "@/types/CareerReasonT";
 
 interface ICareerReasonsProps {
   list: CareerReasonT[];

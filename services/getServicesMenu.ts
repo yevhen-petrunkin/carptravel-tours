@@ -1,4 +1,5 @@
-import type { ServiceT, ServiceMenuT } from "@/types";
+import ServiceT from "@/types/ServiceT";
+import ServiceMenuT from "@/types/ServiceMenuT";
 
 function getServicesMenu(array: ServiceT[]): ServiceMenuT {
   return array.reduce((aggr: ServiceMenuT, item: ServiceT, index: number) => {

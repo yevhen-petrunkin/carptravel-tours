@@ -1,7 +1,7 @@
 "use client";
 
-import type { IGallerySliderProps } from "@/interfaces";
-import type { GalleryPhotoT } from "@/types";
+import IGallerySliderProps from "@/interfaces/IGallerySliderProps";
+import GalleryPhotoT from "@/types/GalleryPhotoT";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectCoverflow, A11y, Keyboard } from "swiper/modules";

@@ -1,4 +1,4 @@
-import type { GalleryPhotoT } from "@/types";
+import GalleryPhotoT from "@/types/GalleryPhotoT";
 
 type GallerySlideT = GalleryPhotoT & {
   index: number;

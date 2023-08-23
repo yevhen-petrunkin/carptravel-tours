@@ -1,4 +1,5 @@
-import type { FormInputT, TextareaT } from "@/types";
+import FormInputT from "@/types/FormInputT";
+import TextareaT from "@/types/TextareaT";
 import { FieldValues } from "react-hook-form";
 
 interface IFormProps {

@@ -1,6 +1,7 @@
 "use client";
 
-import type { ServiceMenuT, ServiceT } from "@/types";
+import ServiceMenuT from "@/types/ServiceMenuT";
+import ServiceT from "@/types/ServiceT";
 
 import { Swiper, SwiperSlide, SwiperRef } from "swiper/react";
 import { EffectFade, Autoplay, A11y, Keyboard } from "swiper/modules";

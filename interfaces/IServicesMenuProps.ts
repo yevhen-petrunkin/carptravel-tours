@@ -1,4 +1,4 @@
-import type { ServiceMenuT } from "@/types";
+import ServiceMenuT from "@/types/ServiceMenuT";
 
 interface IServicesMenuProps {
   menu: ServiceMenuT;

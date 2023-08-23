@@ -1,4 +1,4 @@
-import type { FormInputT } from "@/types";
+import FormInputT from "@/types/FormInputT";
 import { FieldErrors, FieldValues, UseFormRegister } from "react-hook-form";
 
 interface IInputProps {

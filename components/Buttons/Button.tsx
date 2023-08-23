@@ -2,7 +2,7 @@
 
 import { useTextProps } from "@/hooks";
 
-import type { IButtonProps } from "@/interfaces";
+import IButtonProps from "@/interfaces/IButtonProps";
 
 const Button: React.FC<IButtonProps> = ({
   text,

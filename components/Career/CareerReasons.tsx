@@ -1,4 +1,4 @@
-import type { ICareerReasonsProps } from "@/interfaces";
+import ICareerReasonsProps from "@/interfaces/ICareerReasonsProps";
 
 import { Paragraph } from "@/components";
 

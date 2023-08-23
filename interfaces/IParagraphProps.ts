@@ -1,4 +1,4 @@
-import { TextAlignT } from "@/types";
+import TextAlignT from "@/types/TextAlignT";
 
 interface IParagraphProps {
   size: string[];

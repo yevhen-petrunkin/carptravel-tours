@@ -1,4 +1,4 @@
-import type { TextareaT } from "@/types";
+import TextareaT from "@/types/TextareaT";
 import { FieldValues, UseFormRegister } from "react-hook-form";
 
 interface ITextareaProps {

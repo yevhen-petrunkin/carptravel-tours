@@ -1,6 +1,6 @@
 "use client";
 
-import type { IParagraphProps } from "@/interfaces";
+import IParagraphProps from "@/interfaces/IParagraphProps";
 
 import { useTextProps, useTextAlignProp } from "@/hooks";
 
