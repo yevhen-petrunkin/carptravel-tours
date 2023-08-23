@@ -28,6 +28,7 @@ const NavMenuModal: React.FC<INavMenuModalProps> = ({ isOpen, onClose }) => {
           smooth={true}
           offset={0}
           duration={1000}
+          aria-label={`Go to ${section}`}
         >
           {section}
         </Link>

@@ -3,9 +3,10 @@
 import type { ServiceMenuT, ServiceT } from "@/types";
 
 import { Swiper, SwiperSlide, SwiperRef } from "swiper/react";
-import { EffectFade } from "swiper/modules";
+import { EffectFade, Autoplay, A11y, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
+import "swiper/css/autoplay";
 
 import { servicesData } from "@/constants";
 import { getServicesMenu, getCurrentNumber } from "@/services";
@@ -54,9 +55,19 @@ const Services = () => {
       <Swiper
         ref={sliderRef}
         className="h-full"
-        modules={[EffectFade]}
+        modules={[EffectFade, Autoplay, A11y, Keyboard]}
         effect="fade"
         speed={1000}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: true,
+        }}
+        a11y={{
+          enabled: true,
+          prevSlideMessage: "Previous slide",
+          nextSlideMessage: "Next slide",
+        }}
+        keyboard={{ enabled: true }}
       >
         {slides.map((slide: ServiceT, index: number) => {
           return (

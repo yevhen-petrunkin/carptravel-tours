@@ -32,6 +32,7 @@ const StylishButton: React.FC<IStylishButtonProps> = ({
       } stylish-btn ${customClass && customClass}`}
       type={type ? type : "button"}
       onClick={onClick}
+      aria-label={`${text} button`}
     >
       <Link to={link} spy={true} smooth={true} offset={0} duration={1000}>
         {text}

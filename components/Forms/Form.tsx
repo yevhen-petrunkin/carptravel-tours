@@ -82,6 +82,7 @@ const Form: React.FC<IFormProps> = ({
             {...register("confirm", {
               required: needConfirm,
             })}
+            aria-label="Confirmation checkbox"
           />
 
           <span className="relative shrink-0 w-[22px] h-[22px] xl:w-[24px] xl:h-[24px] border-white border-[1px] cursor-pointer form-custom-checkbox" />

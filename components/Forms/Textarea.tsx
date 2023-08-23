@@ -14,6 +14,7 @@ const Textarea: React.FC<ITextareaProps> = ({ textarea, height, register }) => {
         style={{ height: sizing }}
         className="form-field resize-none"
         {...register(textarea.name, { required: textarea.required })}
+        aria-label={`Text input ${textarea.label}`}
       />
     </label>
   );

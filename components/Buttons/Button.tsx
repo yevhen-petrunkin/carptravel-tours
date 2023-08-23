@@ -29,6 +29,7 @@ const Button: React.FC<IButtonProps> = ({
       } ${customClass && customClass}`}
       type={type ? type : "button"}
       onClick={onClick}
+      aria-label={`${text} button`}
     >
       {text ? text : "send"}
     </button>

@@ -42,7 +42,7 @@ const Navbar = () => {
       </span>
 
       <nav className="hidden md:flex md:gap-[24px] xl:gap-[56px] center-end">
-        {navMenu.map(({ section, link }: NavMenuT) => (
+        {navMenu.map(({ section, link }: NavMenuT, index: number) => (
           <Link
             key={section}
             className="cursor-pointer"
@@ -51,6 +51,8 @@ const Navbar = () => {
             smooth={true}
             offset={0}
             duration={1000}
+            tabIndex={index + 1}
+            aria-label={`Go to ${section}`}
           >
             {section}
           </Link>

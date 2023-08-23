@@ -20,6 +20,7 @@ const ServicesMenu: React.FC<IServicesMenuProps> = ({
               : "font-extralight text-white/50"
           } cursor-pointer`}
           onClick={() => handleClick(index)}
+          aria-label={`Menu item ${item.menuItem}`}
         >
           <Image
             src="/assets/icons/bullet.svg"

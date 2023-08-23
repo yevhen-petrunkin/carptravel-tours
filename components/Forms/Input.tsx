@@ -24,6 +24,7 @@ const Input: React.FC<IInputProps> = ({ input, register, errors }) => {
           required,
           pattern: { value: usedPattern, message: error },
         })}
+        aria-label={`Form input ${label}`}
       />
 
       <span

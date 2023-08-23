@@ -3,15 +3,16 @@
 import type { IGallerySliderProps } from "@/interfaces";
 import type { GalleryPhotoT } from "@/types";
 
-import { Swiper, SwiperSlide, SwiperRef } from "swiper/react";
-import { Navigation, EffectCoverflow } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, EffectCoverflow, A11y, Keyboard } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css/zoom";
 import "swiper/css";
 
-import { useState, useEffect, useCallback, useMemo, useRef } from "react";
+import { useMemo } from "react";
 
 import { createSlidesFromPhotos } from "@/services";
+import { sliderBreakpoints } from "@/constants";
 
 import Image from "next/image";
 import { Button } from "@/components";
@@ -21,16 +22,12 @@ const GallerySlider: React.FC<IGallerySliderProps> = ({ photos }) => {
     return createSlidesFromPhotos(photos);
   }, [photos]);
 
-  const galleryRef = useRef<SwiperRef | null>(null);
-  const swiper = galleryRef?.current?.swiper;
-
   return (
-    <div className="mt-[24px] md:mt-[72px]">
+    <div className="relative mt-[24px] md:mt-[72px]">
       <div className="block w-full aspect-[1/2.18] md:hidden">
         <Swiper
-          ref={galleryRef}
           direction="vertical"
-          modules={[Navigation]}
+          modules={[Navigation, A11y]}
           navigation={{
             prevEl: ".button-prev",
             nextEl: ".button-next",
@@ -42,6 +39,11 @@ const GallerySlider: React.FC<IGallerySliderProps> = ({ photos }) => {
           initialSlide={1}
           loop
           centeredSlides
+          a11y={{
+            enabled: true,
+            prevSlideMessage: "Previous slide",
+            nextSlideMessage: "Next slide",
+          }}
         >
           {slides.map((slide: GalleryPhotoT, index: number) => (
             <SwiperSlide key={`${slide.id}_${index}_${slide.url}`}>
@@ -60,20 +62,12 @@ const GallerySlider: React.FC<IGallerySliderProps> = ({ photos }) => {
 
       <div className="hidden md:block h-[294px] xl:h-[429px]">
         <Swiper
-          ref={galleryRef}
           direction="horizontal"
           effect={"coverflow"}
-          modules={[Navigation, EffectCoverflow]}
+          modules={[Navigation, EffectCoverflow, A11y, Keyboard]}
           navigation={{
             prevEl: ".button-prev",
             nextEl: ".button-next",
-          }}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 50,
-            modifier: 1,
-            scale: 0.305,
           }}
           slidesPerView={3}
           spaceBetween={24}
@@ -82,13 +76,24 @@ const GallerySlider: React.FC<IGallerySliderProps> = ({ photos }) => {
           initialSlide={1}
           loop
           centeredSlides
+          breakpoints={sliderBreakpoints}
+          a11y={{
+            enabled: true,
+            prevSlideMessage: "Previous slide",
+            nextSlideMessage: "Next slide",
+          }}
+          keyboard={{ enabled: true }}
         >
           {slides.map((slide: GalleryPhotoT, index: number) => (
             <SwiperSlide key={`${slide.id}_${index}_${slide.url}`}>
-              {({ isActive, isPrev, isNext }) => (
+              {({ isActive }) => (
                 <div
-                  className={`relative -left-[90px] w-[415px] h-[294px] drop-shadow-[0_0_15px_rgba(0,0,0,0.25)] xl:drop-shadow-none
-                   `}
+                  className={`relative -left-[96px] w-[415px] xl:w-[606px] h-[294px] xl:h-[429px] drop-shadow-[0_0_100px_rgba(rgba(9,20,16,0.5) 
+                   ${
+                     isActive
+                       ? "xl:drop-shadow-none"
+                       : "opacity-25 xl:opacity-50"
+                   }`}
                 >
                   <Image
                     src={slide.url}
@@ -104,20 +109,20 @@ const GallerySlider: React.FC<IGallerySliderProps> = ({ photos }) => {
       </div>
 
       <ul className="hidden md:block">
-        <li className="">
+        <li className="absolute z-10 left-[37px] xl:left-[220px] bottom-[17px] xl:bottom-[24px]">
           <Button
             text="back"
-            size={["30px", "30px", "32px"]}
+            size={["30px", "30px", "33px"]}
             line={[1.21]}
             weight={100}
             customClass="button-prev"
             onClick={() => {}}
           />
         </li>
-        <li className="">
+        <li className="absolute z-10 right-[37px] xl:right-[220px] bottom-[17px] xl:bottom-[24px]">
           <Button
             text="next"
-            size={["30px", "30px", "32px"]}
+            size={["30px", "30px", "33px"]}
             line={[1.21]}
             weight={100}
             customClass="button-next"
