@@ -169,7 +169,7 @@ export const careerData = {
         name: "username",
         error: "Incorrect name",
         required: "Full name is required",
-        pattern: /^[A-Za-z]+$/,
+        pattern: /^[A-Za-z]+(?:\s[A-Za-z]+)*$/,
       },
       {
         id: "02",
@@ -188,7 +188,7 @@ export const careerData = {
         name: "position",
         error: "Invalid input",
         required: "Position is required",
-        pattern: /[A-Za-z\s]+$/,
+        pattern: /^[A-Za-z]+(?:\s[A-Za-z]+)*$/,
       },
       {
         id: "04",
@@ -303,7 +303,7 @@ export const contactsData = {
         name: "username",
         error: "Incorrect name",
         required: "Full name is required",
-        pattern: /^[A-Za-z]+$/,
+        pattern: /^[A-Za-z]+(?:\s[A-Za-z]+)*$/,
       },
       {
         id: "02",
