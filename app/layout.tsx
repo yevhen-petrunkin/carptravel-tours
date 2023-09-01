@@ -5,11 +5,9 @@ import type { Metadata } from "next";
 
 import { Media } from "@/hooks";
 import { Header, Contacts } from "@/components";
+import { HomePageMetadata } from "@/metadata";
 
-export const metadata: Metadata = {
-  title: "Carpathians Secret",
-  description: "Travel website based on next.js",
-};
+export const metadata: Metadata = HomePageMetadata;
 
 export default function RootLayout({
   children,

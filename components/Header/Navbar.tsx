@@ -45,6 +45,7 @@ const Navbar = () => {
         {navMenu.map(({ section, link }: NavMenuT, index: number) => (
           <Link
             key={section}
+            href={link}
             className="cursor-pointer"
             to={link}
             spy={true}

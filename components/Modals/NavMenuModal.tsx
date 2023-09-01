@@ -22,6 +22,7 @@ const NavMenuModal: React.FC<INavMenuModalProps> = ({ isOpen, onClose }) => {
           onClick={() => {
             onClose();
           }}
+          href={link}
           className="cursor-pointer"
           to={link}
           spy={true}

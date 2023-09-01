@@ -25,19 +25,22 @@ const StylishButton: React.FC<IStylishButtonProps> = ({
   const textColor = color ? color : "#ffffff";
 
   return (
-    <button
+    <Link
+      href={link}
+      to={link}
+      spy={true}
+      smooth={true}
+      offset={0}
+      duration={1000}
       style={{ fontSize, fontWeight, color: textColor, lineHeight }}
-      className={`${lowercase ? "lowercase" : "uppercase"} ${
-        wider && "tracking-[0.1em]"
-      } stylish-btn ${customClass && customClass}`}
-      type={type ? type : "button"}
+      className={`flex center-center stylish-btn ${
+        lowercase ? "lowercase" : "uppercase"
+      } ${wider && "tracking-[0.1em]"} ${customClass && customClass}`}
       onClick={onClick}
       aria-label={`${text} button`}
     >
-      <Link to={link} spy={true} smooth={true} offset={0} duration={1000}>
-        {text}
-      </Link>
-    </button>
+      {text}
+    </Link>
   );
 };
 
